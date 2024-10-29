@@ -120,7 +120,7 @@ int main(void) {
 	
 	// hello world!
 	UART_printf("Program Begins\r\n");
-	sprintf(printf_buffer,"2DX4 Project Code, fahadn, 400457365\r\n");
+	sprintf(printf_buffer,"Project Code\r\n");
 	UART_printf(printf_buffer);
 	
 	/* Those basic I2C read functions can be used to check your own I2C functions */
