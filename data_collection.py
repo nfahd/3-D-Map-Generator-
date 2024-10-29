@@ -1,5 +1,4 @@
-# Student name: Nuha Fahad
-# Student number: 400457365
+# Student name: Nuha
 # Python version: 3.8
 
 import serial   
@@ -8,7 +7,7 @@ import math
 ser = serial.Serial('COM3',115200) # Change COM Port #
 ser.open
 
-f = open(r"C:\Users\nuhas\OneDrive - McMaster University\Desktop\2DX3\fahadn_2DX3_finalDeliverable\VisualizationCode\datacapture.xyz", "w") # Change name of file 
+f = open(r"add File path here", "w") # Change name of file 
 i = 0
 x = 0 # initial x-displacement (mm)
 increment = 2000 # x-increment in mm // 200 cm of distance between each frame
@@ -28,7 +27,7 @@ while (1):
         i += 1
     if (data.isdigit() == False and data_collected == True): 
         f.close() 
-        f = open(r"C:\Users\nuhas\OneDrive - McMaster University\Desktop\2DX3\fahadn_2DX3_finalDeliverable\VisualizationCode\datacapture.xyz", "a")
+        f = open(r"add file path here", "a")
     if i == 32: # 3D 
         i = 0
         x = x + increment
